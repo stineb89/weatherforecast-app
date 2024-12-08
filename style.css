@@ -1,0 +1,21 @@
+body {
+  background: palevioletred;
+}
+h1 {
+  font-family: "Exo 2", serif;
+}
+h2 {
+  font-family: "Exo 2", serif;
+}
+.weather-app {
+  background: white;
+  width: 500px;
+  display: block;
+  margin: 50px auto;
+  padding: 2%;
+  border-radius: 20px;
+  border: 3px dashed black;
+}
+p {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+}
