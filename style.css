@@ -17,13 +17,12 @@ footer {
   text-align: center;
   color: rgb(94, 47, 69);
 }
-
 .weather-app {
   background: white;
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 50px auto;
-  padding: 5%;
+  padding: 4%;
   border-radius: 20px;
   border: 1px solid black;
   box-shadow: 2px 0px 15px rgb(190, 166, 177);
@@ -69,20 +68,20 @@ a:hover {
 .city-name {
   font-size: 33px;
   position: relative;
-  left: 00px;
+  left: -10px;
 }
 .country-name {
   font-size: 26px;
   margin: -25px 0 0;
   position: relative;
-  left: 0px;
+  left: -10px;
 }
 .city-app-details {
   font-size: 15px;
   color: rgb(59, 83, 124);
   line-height: 25px;
   position: relative;
-  left: 0px;
+  left: -10px;
 }
 .city-app-details strong {
   color: palevioletred;
