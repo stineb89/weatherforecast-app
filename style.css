@@ -7,15 +7,108 @@ h1 {
 h2 {
   font-family: "Exo 2", serif;
 }
+p {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  text-align: left;
+}
+footer {
+  border-top: 1px solid rgb(203, 203, 203);
+  padding: 25px;
+  text-align: center;
+  color: rgb(94, 47, 69);
+}
+
 .weather-app {
   background: white;
   width: 500px;
   display: block;
   margin: 50px auto;
-  padding: 2%;
+  padding: 5%;
   border-radius: 20px;
-  border: 3px dashed black;
+  border: 1px solid black;
+  box-shadow: 2px 0px 15px rgb(190, 166, 177);
 }
-p {
-  font-family: "Edu AU VIC WA NT Pre", cursive;
+.search-button {
+  border-radius: 15px;
+  border: none;
+  padding: 12px;
+  color: white;
+  background: rgb(140, 64, 112);
+  position: relative;
+  left: 10px;
+  cursor: pointer;
+}
+.search-button:hover {
+  background: rgb(162, 98, 139);
+}
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+.search-form-city {
+  border-radius: 5px;
+  border: 1px solid rgb(154, 154, 154);
+  padding: 10px;
+  background: rgb(255, 233, 252);
+  width: 300px;
+  position: relative;
+  left: 130px;
+}
+.main-weather-app-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0px;
+  border-top: 1px solid rgb(217, 217, 217);
+}
+a {
+  color: rgb(63, 63, 63);
+}
+a:hover {
+  color: rgb(139, 139, 139);
+}
+.city-name {
+  font-size: 33px;
+  position: relative;
+  left: 00px;
+}
+.country-name {
+  font-size: 26px;
+  margin: -25px 0 0;
+  position: relative;
+  left: 0px;
+}
+.city-app-details {
+  font-size: 15px;
+  color: rgb(59, 83, 124);
+  line-height: 25px;
+  position: relative;
+  left: 0px;
+}
+.city-app-details strong {
+  color: palevioletred;
+}
+.current-temperature {
+  font-size: 75px;
+  font-family: "Gill Sans";
+  font-weight: bold;
+  position: relative;
+  top: 25px;
+  left: 60px;
+}
+.current-emoji {
+  font-size: 36px;
+  position: relative;
+  top: 55px;
+  left: 105px;
+}
+.current-cells {
+  font-size: 22px;
+  position: relative;
+  top: 43px;
+  right: -17px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
 }

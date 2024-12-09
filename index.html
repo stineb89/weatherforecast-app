@@ -22,22 +22,32 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" id="" required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            class="search-form-city"
+            id=""
+            required
+          />
+          <input type="submit" class="search-button" value="search" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Oslo</h1>
-          <h2>Norway</h2>
-          <p>
-            Sunday, 21:18, moderate rain<br />
-            Humidity: <strong>87%</strong>, Wind:
-            <strong>7.2km/h</strong>
-          </p>
+        <div class="main-weather-app-info">
+          <div>
+            <h1 class="city-name">Oslo</h1>
+            <h2 class="country-name">Norway</h2>
+            <p class="city-app-details">
+              Sunday, 21:18, moderate rain<br />
+              Humidity: <strong>87%</strong>, Wind:
+              <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <span class="current-emoji">☀️</span>
+          <span class="current-temperature">14</span>
+          <span class="current-cells">ºC</span>
         </div>
-        <div>☀️ 14ºC</div>
       </main>
       <footer>
         This project was coded by
@@ -46,5 +56,6 @@
         <a href="https://lunaweather.netlify.app/">hosted on Netlify</a>
       </footer>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
