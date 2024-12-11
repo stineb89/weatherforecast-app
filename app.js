@@ -1,32 +1,35 @@
 // current time
+function showTime() {
+  let currentTime = new Date();
+  let day = currentTime.getDay();
+  let hours = currentTime.getHours();
+  let minutes = currentTime.getMinutes();
 
-let currentTime = new Date();
-let day = currentTime.getDay();
-let hours = currentTime.getHours();
-let minutes = currentTime.getMinutes();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
-if (hours < 10) {
-  hours = `0${hours}`;
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+    7;
+  }
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  let currentDay = days[day];
+  let currenttime = document.querySelector("#currentTime");
+  currenttime.innerHTML = `${currentDay}, ${hours}:${minutes}`;
 }
 
-if (minutes < 10) {
-  minutes = `0${minutes}`;
-  7;
-}
-
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
-let currentDay = days[day];
-let currenttime = document.querySelector("#currentTime");
-currenttime.innerHTML = `${currentDay}, ${hours}:${minutes}`;
+showTime();
 
 // city search
 
