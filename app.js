@@ -56,4 +56,10 @@ function displayTemperature(response) {
 
   let currentCountryElement = document.querySelector("#currentCountry");
   currentCountry.innerHTML = response.data.country;
+
+  let descriptionWeatherElement = document.querySelector("#descriptionWeather");
+  descriptionWeather.innerHTML = response.data.condition.description;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidity.innerHTML = Math.round(response.data.temperature.humidity);
 }
