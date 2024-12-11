@@ -68,15 +68,16 @@ footer {
   margin-top: 70px;
 }
 .city-name {
-  font-size: 33px;
+  font-size: 36px;
   position: relative;
   right: 5px;
 }
 .country-name {
-  font-size: 26px;
+  font-size: 25px;
   position: relative;
   right: 5px;
-  top: -20px;
+  top: -30px;
+  font-weight: normal;
 }
 .city-app-details {
   font-size: 15px;
