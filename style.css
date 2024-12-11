@@ -30,7 +30,7 @@ footer {
 }
 .weather-app {
   background: white;
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 50px auto;
   padding: 5%;
@@ -95,19 +95,19 @@ footer {
   font-family: "Gill Sans";
   font-weight: bold;
   position: relative;
-  left: 380px;
+  left: 290px;
   bottom: 180px;
 }
 .current-icon {
   font-size: 36px;
   position: relative;
-  left: 385px;
+  left: 290px;
   bottom: 185px;
 }
 .current-cells {
   font-size: 22px;
   position: relative;
-  left: 380px;
+  left: 290px;
   bottom: 215px;
 }
 .daily-information {
