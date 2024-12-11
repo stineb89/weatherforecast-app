@@ -1,5 +1,10 @@
 body {
   background: palevioletred;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: -80px 0px 50px -30px;
 }
 h1 {
   font-family: "Exo 2", serif;
@@ -11,103 +16,104 @@ p {
   font-family: "Edu AU VIC WA NT Pre", cursive;
   text-align: left;
 }
-footer {
-  border-top: 1px solid rgb(203, 203, 203);
-  padding: 25px;
-  text-align: center;
-  color: rgb(94, 47, 69);
-}
-.weather-app {
-  background: white;
-  width: 400px;
-  display: block;
-  margin: 50px auto;
-  padding: 4%;
-  border-radius: 20px;
-  border: 1px solid black;
-  box-shadow: 2px 0px 15px rgb(190, 166, 177);
-}
-.search-button {
-  border-radius: 15px;
-  border: none;
-  padding: 12px;
-  color: white;
-  background: rgb(140, 64, 112);
-  position: relative;
-  left: 10px;
-  cursor: pointer;
-}
-.search-button:hover {
-  background: rgb(162, 98, 139);
-}
-.search-form {
-  display: flex;
-  justify-content: space-between;
-}
-.search-form-city {
-  border-radius: 5px;
-  border: 1px solid rgb(154, 154, 154);
-  padding: 10px;
-  background: rgb(255, 233, 252);
-  width: 300px;
-  position: relative;
-  left: 130px;
-}
-.main-weather-app-info {
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 0px;
-  border-top: 1px solid rgb(217, 217, 217);
-}
 a {
   color: rgb(63, 63, 63);
 }
 a:hover {
   color: rgb(139, 139, 139);
 }
+footer {
+  border-top: 1px solid rgb(203, 203, 203);
+  padding: 20px;
+  text-align: center;
+  color: rgb(30, 32, 68);
+}
+.weather-app {
+  background: white;
+  width: 500px;
+  display: block;
+  margin: 50px auto;
+  padding: 5%;
+  border-radius: 20px;
+  border: 1px solid black;
+  box-shadow: 2px 0px 15px rgb(190, 166, 177);
+}
+.submit {
+  border-radius: 10px;
+  border: none;
+  padding: 15px;
+  color: white;
+  background: rgb(57, 92, 190);
+  position: relative;
+  top: 19px;
+  cursor: pointer;
+}
+.submit:hover {
+  background: rgb(162, 98, 139);
+}
+.search {
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 15px;
+  background: rgb(213, 213, 255);
+  width: 300px;
+  position: relative;
+  right: 5px;
+  top: 20px;
+}
+.main-weather-app-info {
+  margin: 50px 0px;
+  border-top: 1px solid rgb(217, 217, 217);
+  margin-top: 70px;
+}
 .city-name {
   font-size: 33px;
   position: relative;
-  left: -10px;
+  right: 5px;
 }
 .country-name {
   font-size: 26px;
-  margin: -25px 0 0;
   position: relative;
-  left: -10px;
+  right: 5px;
+  top: -20px;
 }
 .city-app-details {
   font-size: 15px;
   color: rgb(59, 83, 124);
   line-height: 25px;
   position: relative;
-  left: -10px;
+  top: -20px;
+  right: 5px;
 }
 .city-app-details strong {
   color: palevioletred;
 }
-.current-temperature {
+.currentTemperature {
   font-size: 75px;
   font-family: "Gill Sans";
   font-weight: bold;
   position: relative;
-  top: 25px;
-  left: 60px;
+  left: 380px;
+  bottom: 180px;
 }
-.current-emoji {
+.current-icon {
   font-size: 36px;
   position: relative;
-  top: 55px;
-  left: 105px;
+  left: 385px;
+  bottom: 185px;
 }
 .current-cells {
   font-size: 22px;
   position: relative;
-  top: 43px;
-  right: -17px;
+  left: 380px;
+  bottom: 215px;
+}
+.daily-information {
+  margin: -50px;
 }
 .weather-forecast {
   display: flex;
   justify-content: space-between;
-  margin: 20px auto;
+  margin: 20px 30px;
 }

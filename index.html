@@ -15,38 +15,40 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>My weather application</title>
   </head>
-  <style></style>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
-            class="search-form-city"
-            id=""
+            class="search"
+            id="searchInput"
             required
           />
-          <input type="submit" class="search-button" value="search" />
+          <input type="submit" value="search" class="submit" />
         </form>
       </header>
       <main>
         <div class="main-weather-app-info">
-          <div>
-            <h1 class="city-name">Oslo</h1>
-            <h2 class="country-name">Norway</h2>
-            <p class="city-app-details">
-              Sunday, 21:18, moderate rain<br />
-              Humidity: <strong>87%</strong>, Wind:
-              <strong>7.2km/h</strong>
-            </p>
-          </div>
-          <span class="current-emoji">☀️</span>
-          <span class="current-temperature">14</span>
-          <span class="current-cells">ºC</span>
+          <h1 class="city-name" id="currentCity">Oslo</h1>
+          <h2 class="country-name" id="currentCountry">Norway</h2>
+          <p class="city-app-details">
+            <span id="currentTime"> Saturday 15:32</span>,
+            <span id="details-current-weather">moderate rain</span>
+            <br />
+            Humidity: <strong id="humidity">87%</strong>, Wind:
+            <strong id="wind">7.2km/h</strong>
+          </p>
+        </div>
+        <div class="daily-information">
+          <span class="current-icon">☀️</span>
+          <span class="currentTemperature" id="currentTemperature">14</span
+          ><span class="current-cells">°C</span>
         </div>
         <div class="weather-forecast">
           <div class="forecast-day">Mon</div>
