@@ -100,19 +100,19 @@ footer {
   font-weight: bold;
   position: relative;
   left: 290px;
-  bottom: 130px;
+  bottom: 180px;
 }
 .current-icon {
   font-size: 36px;
   position: relative;
   left: 300px;
-  bottom: 135px;
+  bottom: 185px;
 }
 .current-cells {
   font-size: 22px;
   position: relative;
   left: 290px;
-  bottom: 165px;
+  bottom: 215px;
 }
 .daily-information {
   margin: -50px;

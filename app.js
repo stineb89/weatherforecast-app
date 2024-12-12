@@ -3,6 +3,7 @@ function handleSubmit(event) {
   let searchInput = document.querySelector("#searchInput");
   let cityElement = document.querySelector("#currentCity");
   cityElement.innerHTML = searchInput.value;
+
   searchCity(searchInput.value);
 }
 
@@ -26,6 +27,51 @@ function refreshWeather(response) {
 
   let cityElement = document.querySelector("#currentCity");
   cityElement.innerHTML = response.data.city;
+
+  let countryElement = document.querySelector("#currentCountry");
+  countryElement.innerHTML = response.data.country;
+
+  let descriptionElement = document.querySelector("#descriptionWeather");
+  descriptionElement.innerHTML = response.data.condition.description;
+
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
+
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = `${response.data.wind.speed}km/h`;
+
+  let date = new Date(response.data.time * 1000);
+  let currentTimeElement = document.querySelector("#currentTime");
+  currentTimeElement.innerHTML = showDate(date);
+}
+
+// current time
+
+function showDate(date) {
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  let day = days[date.getDay()];
+
+  return `${day} ${hours}:${minutes}`;
 }
 
 searchCity("Oslo");
