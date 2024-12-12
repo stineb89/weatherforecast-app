@@ -43,6 +43,9 @@ function refreshWeather(response) {
   let date = new Date(response.data.time * 1000);
   let currentTimeElement = document.querySelector("#currentTime");
   currentTimeElement.innerHTML = showDate(date);
+
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = response.data.condition.icon;
 }
 
 // current time

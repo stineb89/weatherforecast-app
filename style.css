@@ -33,9 +33,8 @@ footer {
     rgb(231, 242, 250) 3.3%,
     rgb(174, 233, 253) 109.6%
   );
-  width: 400px;
+  width: 390px;
   display: block;
-  margin: 50px auto;
   padding: 5%;
   border-radius: 20px;
   border: 1px solid black;
@@ -67,9 +66,8 @@ footer {
   left: 65px;
 }
 .main-weather-app-info {
-  margin: 50px 0px;
+  margin: 50px 0;
   border-top: 1px solid rgb(217, 217, 217);
-  margin-top: 70px;
 }
 .city-name {
   font-size: 36px;
@@ -99,20 +97,21 @@ footer {
   font-family: "Gill Sans";
   font-weight: bold;
   position: relative;
-  left: 290px;
-  bottom: 180px;
+  left: 330px;
+  bottom: 255px;
 }
-.current-icon {
-  font-size: 36px;
+.current-icon-image {
+  width: 80px;
+  height: 80px;
   position: relative;
-  left: 300px;
-  bottom: 185px;
+  left: 250px;
+  bottom: 160px;
 }
 .current-cells {
   font-size: 22px;
   position: relative;
-  left: 290px;
-  bottom: 215px;
+  left: 330px;
+  bottom: 290px;
 }
 .daily-information {
   margin: -50px;
