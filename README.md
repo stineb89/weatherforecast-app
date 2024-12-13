@@ -1,4 +1,6 @@
 <b>Interactive weather app</b>
+<br/>
+<br/>
 Search for your city and get current temperature for your city.
 
 _________________
