@@ -14,7 +14,7 @@ searchFormElement.addEventListener("submit", handleSubmit);
 
 function searchCity(city) {
   apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
-  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=5e64c3tb70d2afbdd0ba0e314o875a8e&units=metric`;
+  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
 
   axios.get(apiUrl).then(refreshWeather);
 }
@@ -41,11 +41,11 @@ function refreshWeather(response) {
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
 
   let date = new Date(response.data.time * 1000);
-  let currentTimeElement = document.querySelector("#currentTime");
-  currentTimeElement.innerHTML = showDate(date);
+  let timeElement = document.querySelector("#time");
+  timeElement.innerHTML = showDate(date);
 
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = response.data.condition.icon;
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
 
 // current time

@@ -1,5 +1,19 @@
 body {
-  background: palevioletred;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -33,29 +47,30 @@ footer {
     rgb(231, 242, 250) 3.3%,
     rgb(174, 233, 253) 109.6%
   );
-  width: 390px;
+  width: 420px;
   display: block;
-  padding: 5%;
+  padding: 2%;
   border-radius: 20px;
   border: 1px solid black;
   box-shadow: 2px 0px 15px rgb(190, 166, 177);
 }
 .submit {
-  border-radius: 5px;
-  border: 5px dashed darkblue;
-  padding: 9px;
+  border-radius: 50px;
+  border: 1px dashed darkblue;
+  padding: 7px;
   color: white;
   background: rgb(57, 92, 190);
   position: relative;
   top: 19px;
-  left: 45px;
+  left: 70px;
   cursor: pointer;
+  margin-top: 20px;
 }
 .submit:hover {
   background: rgb(162, 98, 139);
 }
 .search {
-  border-radius: 5px;
+  border-radius: 20px;
   border: none;
   font-size: 15px;
   padding: 10px;
@@ -63,7 +78,7 @@ footer {
   width: 210px;
   position: relative;
   top: 20px;
-  left: 65px;
+  left: 70px;
 }
 .main-weather-app-info {
   margin: 50px 0;
@@ -72,13 +87,14 @@ footer {
 .city-name {
   font-size: 36px;
   position: relative;
-  right: 5px;
+  left: 5px;
+  top: 50px;
 }
 .country-name {
-  font-size: 25px;
+  font-size: 22px;
   position: relative;
-  right: 5px;
-  top: -30px;
+  left: 5px;
+  top: 20px;
   font-weight: normal;
 }
 .city-app-details {
@@ -86,35 +102,39 @@ footer {
   color: rgb(59, 83, 124);
   line-height: 25px;
   position: relative;
-  top: -20px;
-  right: 5px;
+  top: 30px;
+  right: 0px;
 }
 .city-app-details strong {
   color: rgb(57, 92, 190);
 }
+.main-weather-app-info {
+  margin: 50px 0;
+  border-top: 1px solid rgb(217, 217, 217);
+}
 .currentTemperature {
-  font-size: 75px;
+  font-size: 55px;
   font-family: "Gill Sans";
   font-weight: bold;
   position: relative;
-  left: 330px;
-  bottom: 255px;
+  left: 365px;
+  bottom: 200px;
 }
-.current-icon-image {
+.weather-app-icon {
+  position: relative;
+  left: 150px;
+  bottom: 63px;
   width: 80px;
   height: 80px;
-  position: relative;
-  left: 250px;
-  bottom: 160px;
 }
 .current-cells {
   font-size: 22px;
   position: relative;
-  left: 330px;
-  bottom: 290px;
+  left: 365px;
+  bottom: 220px;
 }
 .daily-information {
-  margin: -50px;
+  margin: -70px;
 }
 .weather-forecast {
   display: flex;
