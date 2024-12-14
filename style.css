@@ -83,12 +83,17 @@ footer {
 }
 .weather-city {
   font-size: 36px;
-  margin-left: 10px;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
 }
 .weather-country {
   font-size: 22px;
   font-weight: normal;
-  margin: -30px 0px 0px 10px;
+  position: relative;
+  left: 20px;
+  bottom: 30px;
+  margin: -30px 0 0 12px;
 }
 .weather-app-details {
   font-size: 15px;
@@ -122,10 +127,8 @@ footer {
 .feels-like-temperature {
   font-family: "Edu AU VIC WA NT Pre", cursive;
   color: white;
-  font-size: 9px;
+  font-size: 12px;
   position: absolute;
   top: 65px;
-}
-.feels-like-temperature strong {
-  color: rgb(45, 45, 142);
+  left: 550px;
 }
