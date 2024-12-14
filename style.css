@@ -117,3 +117,14 @@ footer {
   position: relative;
   top: 10px;
 }
+.feels-like-temperature {
+  font-family: "Edu AU VIC WA NT Pre", cursive;
+  color: white;
+  font-size: 9px;
+  position: relative;
+  bottom: 110px;
+  left: -10px;
+}
+.feels-like-temperature strong {
+  color: rgb(45, 45, 142);
+}

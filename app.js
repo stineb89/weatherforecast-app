@@ -46,6 +46,11 @@ function refreshWeather(response) {
 
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+  let feelslikeElement = document.querySelector("#feelsLike");
+  feelslikeElement.innerHTML = `${Math.round(
+    response.data.temperature.feels_like
+  )}°C`;
 }
 
 // current time
@@ -78,3 +83,5 @@ function showDate(date) {
 }
 
 searchCity("Oslo");
+
+// java change pic function
