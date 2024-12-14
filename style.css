@@ -103,19 +103,21 @@ footer {
   font-size: 55px;
   font-family: "Gill Sans";
   font-weight: bold;
+  margin: 0 0px 0px -20px;
 }
 .weather-app-icon {
   width: 60px;
   height: 60px;
   position: relative;
   top: 10px;
-  left: 13px;
+  left: -17px;
 }
 .current-unit {
   font-size: 22px;
   margin-right: 40px;
   position: relative;
   top: 10px;
+  left: -5px;
 }
 .feels-like-temperature {
   font-family: "Edu AU VIC WA NT Pre", cursive;
