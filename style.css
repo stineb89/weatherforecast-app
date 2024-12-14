@@ -1,23 +1,20 @@
 body {
-  background-color: black;
-  background-image: radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1) 2px,
-      transparent 30px
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
     );
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #131313;
+  background-size: 20px 20px;
 }
 h1 {
   font-family: "Exo 2", serif;
@@ -25,119 +22,98 @@ h1 {
 h2 {
   font-family: "Exo 2", serif;
 }
+header {
+  padding: 0 0 30px 0;
+}
+.submit-button {
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 8px;
+  color: white;
+  background: rgb(57, 92, 190);
+  cursor: pointer;
+  margin: 30px 0 20px 0;
+}
+.submit-button:hover {
+  background: rgb(53, 106, 212);
+}
+.search {
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 8px;
+  background: rgb(213, 213, 255);
+  width: 180px;
+  margin-left: 40px;
+}
 p {
   font-family: "Edu AU VIC WA NT Pre", cursive;
   text-align: left;
 }
 a {
-  color: rgb(57, 92, 190);
+  color: rgb(222, 224, 224);
 }
 a:hover {
-  color: rgb(139, 139, 139);
+  color: rgb(237, 237, 237);
 }
 footer {
-  border-top: 1px solid rgb(203, 203, 203);
-  padding: 30px;
+  font-size: 12px;
+  padding: 3px;
   text-align: center;
-  color: rgb(136, 136, 136);
+  color: rgb(145, 181, 205);
+  display: block;
+  margin-top: -50px;
 }
 .weather-app {
-  background: linear-gradient(
-    178.6deg,
-    rgb(231, 242, 250) 3.3%,
-    rgb(174, 233, 253) 109.6%
-  );
-  width: 420px;
+  background-image: url("https://cdn.pixabay.com/photo/2023/04/01/14/52/moon-7892567_1280.jpg");
+  background-size: cover;
+  max-width: 500px;
   display: block;
-  padding: 2%;
+  margin: 60px auto;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 3px solid rgb(255, 255, 255);
   box-shadow: 2px 0px 15px rgb(190, 166, 177);
 }
-.submit {
-  border-radius: 50px;
-  border: 1px dashed darkblue;
-  padding: 7px;
-  color: white;
-  background: rgb(57, 92, 190);
-  position: relative;
-  top: 19px;
-  left: 70px;
-  cursor: pointer;
-  margin-top: 20px;
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
 }
-.submit:hover {
-  background: rgb(162, 98, 139);
+.weather-temperature-container {
+  display: flex;
 }
-.search {
-  border-radius: 20px;
-  border: none;
-  font-size: 15px;
-  padding: 10px;
-  background: rgb(213, 213, 255);
-  width: 210px;
-  position: relative;
-  top: 20px;
-  left: 70px;
-}
-.main-weather-app-info {
-  margin: 50px 0;
-  border-top: 1px solid rgb(217, 217, 217);
-}
-.city-name {
+.weather-city {
   font-size: 36px;
-  position: relative;
-  left: 5px;
-  top: 50px;
+  margin-left: 10px;
 }
-.country-name {
+.weather-country {
   font-size: 22px;
-  position: relative;
-  left: 5px;
-  top: 20px;
   font-weight: normal;
+  margin: -30px 0px 0px 10px;
 }
-.city-app-details {
+.weather-app-details {
   font-size: 15px;
-  color: rgb(59, 83, 124);
+  color: rgb(255, 255, 255);
   line-height: 25px;
-  position: relative;
-  top: 30px;
-  right: 0px;
+  margin-left: 10px;
 }
-.city-app-details strong {
-  color: rgb(57, 92, 190);
-}
-.main-weather-app-info {
-  margin: 50px 0;
-  border-top: 1px solid rgb(217, 217, 217);
+.weather-app-details strong {
+  color: rgb(45, 45, 142);
 }
 .currentTemperature {
   font-size: 55px;
   font-family: "Gill Sans";
   font-weight: bold;
-  position: relative;
-  left: 365px;
-  bottom: 200px;
 }
 .weather-app-icon {
+  width: 60px;
+  height: 60px;
   position: relative;
-  left: 150px;
-  bottom: 63px;
-  width: 80px;
-  height: 80px;
+  top: 10px;
+  left: 13px;
 }
-.current-cells {
+.current-unit {
   font-size: 22px;
+  margin-right: 40px;
   position: relative;
-  left: 365px;
-  bottom: 220px;
-}
-.daily-information {
-  margin: -70px;
-}
-.weather-forecast {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 30px;
+  top: 10px;
 }
