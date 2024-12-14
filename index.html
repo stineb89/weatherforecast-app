@@ -30,44 +30,38 @@
             id="searchInput"
             required
           />
-          <input type="submit" value="search" class="submit" />
+          <input type="submit" value="search" class="submit-button" />
         </form>
       </header>
       <main>
-        <div class="main-weather-app-info">
-          <h1 class="city-name" id="currentCity"></h1>
-          <h2 class="country-name" id="currentCountry"></h2>
-          <p class="city-app-details">
-            <span id="time"></span>,
-            <span id="descriptionWeather"></span>
-            <br />
-            Humidity: <strong id="humidity"></strong>, Wind:
-            <strong id="wind"></strong>
-          </p>
-        </div>
-        <div class="daily-information">
-          <div class="weather-app-icon">
-            <div id="icon"></div>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-city" id="currentCity"></h1>
+            <h2 class="weather-country" id="currentCountry"></h2>
+            <p class="weather-app-details">
+              <span id="time"></span>,
+              <span id="descriptionWeather"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind"></strong>
+            </p>
           </div>
-          <span class="currentTemperature" id="temperature"></span
-          ><span class="current-cells">°C</span>
-        </div>
-        <div class="weather-forecast">
-          <div class="forecast-day"></div>
-          <div class="forecast-day"></div>
-          <div class="forecast-day"></div>
-          <div class="forecast-day"></div>
-          <div class="forecast-day"></div>
+          <div class="weather-temperature-container">
+            <div id="icon"></div>
+            <div class="currentTemperature" id="temperature"></div>
+            <div class="current-unit">°C</div>
+          </div>
         </div>
       </main>
-      <footer>
-        This project was coded by
-        <a href="https://github.com/stineb89">Stine Berg</a> and is on
-        <a href="https://github.com/stineb89/weatherforecast-app">GitHub</a>
-        and
-        <a href="https://lunaweather.netlify.app/">hosted on Netlify</a>
-      </footer>
     </div>
+    <footer>
+      This project was coded by
+      <a href="https://github.com/stineb89">Stine Berg</a> and is on
+      <a href="https://github.com/stineb89/weatherforecast-app">GitHub</a>
+      and
+      <a href="https://lunaweather.netlify.app/">hosted on Netlify</a>
+    </footer>
+
     <script src="app.js"></script>
   </body>
 </html>
