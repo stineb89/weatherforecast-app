@@ -79,9 +79,7 @@ function showDate(date) {
 
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes} ✨`;
 }
 
 searchCity("Oslo");
-
-// java change pic function
