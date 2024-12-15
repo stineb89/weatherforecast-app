@@ -65,7 +65,7 @@ footer {
   margin-top: -50px;
 }
 .weather-app {
-  background-image: url("https://cdn.pixabay.com/photo/2023/04/01/14/52/moon-7892567_1280.jpg");
+  background-image: url("/Users/stineberg/Dropbox/Min Mac (Stine)/Downloads/moon-7892567_1280.jpg");
   background-size: cover;
   max-width: 500px;
   display: block;
@@ -100,6 +100,7 @@ footer {
   color: rgb(255, 255, 255);
   line-height: 25px;
   margin-left: 10px;
+  margin-bottom: -20px;
 }
 .weather-app-details strong {
   color: rgb(45, 45, 142);
@@ -128,7 +129,7 @@ footer {
   font-family: "Edu AU VIC WA NT Pre", cursive;
   color: white;
   font-size: 12px;
-  position: absolute;
-  top: 65px;
-  left: 550px;
+  position: relative;
+  left: 350px;
+  bottom: 265px;
 }
