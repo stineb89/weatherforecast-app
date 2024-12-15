@@ -65,7 +65,7 @@ footer {
   margin-top: -50px;
 }
 .weather-app {
-  background-image: url("/Users/stineberg/Dropbox/Min Mac (Stine)/Downloads/moon-7892567_1280.jpg");
+  background-image: url("https://github.com/stineb89/weatherforecast-app/blob/main/moon-7892567_1280.jpg?raw=true");
   background-size: cover;
   max-width: 500px;
   display: block;
