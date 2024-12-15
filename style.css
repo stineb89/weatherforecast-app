@@ -16,6 +16,21 @@ body {
   background-color: #131313;
   background-size: 20px 20px;
 }
+.title {
+  text-align: center;
+  font-weight: light;
+  font-family: "Caveat", cursive;
+  font-size: 40px;
+  color: rgb(177, 213, 249);
+  margin: 15px 0px -50px;
+  text-transform: lowercase;
+}
+
+.material-symbols-outlined {
+  position: relative;
+  top: 63px;
+  margin-left: 2px;
+}
 h1 {
   font-family: "Exo 2", serif;
 }
@@ -43,7 +58,7 @@ header {
   font-size: 15px;
   padding: 8px;
   background: rgb(213, 213, 255);
-  width: 180px;
+  width: 190px;
   margin-left: 40px;
 }
 p {
@@ -81,6 +96,10 @@ footer {
 .weather-temperature-container {
   display: flex;
 }
+.hum-and-wind {
+  text-align: right;
+  color: white;
+}
 .weather-city {
   font-size: 36px;
   position: relative;
@@ -99,8 +118,7 @@ footer {
   font-size: 15px;
   color: rgb(255, 255, 255);
   line-height: 25px;
-  margin-left: 10px;
-  margin-bottom: -20px;
+  margin: 10px 10px;
 }
 .weather-app-details strong {
   color: rgb(45, 45, 142);
@@ -124,12 +142,4 @@ footer {
   position: relative;
   top: 10px;
   left: -5px;
-}
-.feels-like-temperature {
-  font-family: "Edu AU VIC WA NT Pre", cursive;
-  color: white;
-  font-size: 12px;
-  position: relative;
-  left: 350px;
-  bottom: 265px;
 }
