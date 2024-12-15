@@ -65,7 +65,7 @@ footer {
   margin-top: -50px;
 }
 .weather-app {
-  background-image: url(images/moon-7892567_1280.jpg);
+  background-image: url("images/moon-7892567_1280.jpg");
   background-size: cover;
   max-width: 500px;
   display: block;
