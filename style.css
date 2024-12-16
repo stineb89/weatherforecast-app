@@ -143,3 +143,30 @@ footer {
   top: 10px;
   left: -5px;
 }
+  .weather-forecast {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+      }
+      .weather-forecast-date {
+        text-align: center;
+        color: white;
+        font-size: 17px;
+        line-height: 20px;
+      }
+      .weather-forecast-icon {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .weather-forecast-temperatures {
+        text-align: center;
+        color: black;
+        font-family: "Edu AU VIC WA NT Pre";
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .weather-forecast-temp {
+        padding: 0 10px;
+      }

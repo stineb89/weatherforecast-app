@@ -1,3 +1,5 @@
+// submit button
+
 function handleSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#searchInput");
@@ -47,10 +49,7 @@ function refreshWeather(response) {
   let iconElement = document.querySelector("#icon");
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 
-  let feelslikeElement = document.querySelector("#feelsLike");
-  feelslikeElement.innerHTML = `${Math.round(
-    response.data.temperature.feels_like
-  )}°C`;
+  getForecast(response.data.city);
 }
 
 // current time
@@ -82,4 +81,41 @@ function showDate(date) {
   return `${day} ${hours}:${minutes} ✨`;
 }
 
+// forecast
+
+function displayForecast(response) {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `
+          <div class="weather-forecast-day">
+                <div class="weather-forecast-date">${day}</div>
+                <div class="weather-forecast-icon">🌤</div>
+                <div class="weather-forecast-temperatures">
+                  <div class="weather-forecast-temp">
+                    <strong>15º</strong>
+                  </div>
+                  <div class="weather-forecast-temp">9º</div>
+                </div>
+              </div>
+              `;
+  });
+
+  let forecast = document.querySelector("#forecast");
+  forecast.innerHTML = forecastHtml;
+}
+
+//
+
+function getForecast(city) {
+  let apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios(apiUrl).then(displayForecast);
+}
+
+displayForecast();
 searchCity("Oslo");
