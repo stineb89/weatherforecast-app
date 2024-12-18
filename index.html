@@ -30,9 +30,11 @@
     <title>My weather application</title>
   </head>
   <body>
+    <div class="weather-app-header">
+      <h1 class="title">World Weather</h1>
+    </div>
     <div class="weather-app">
       <header>
-        <h1 class="title">World Weather</h1>
         <span class="material-symbols-outlined">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -46,15 +48,22 @@
             />
           </svg>
         </span>
-        <form id="search-form">
+        <form id="search-form" class="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             class="search"
             id="searchInput"
+            autofocus="on"
+            autocomplete="off"
             required
           />
-          <input type="submit" value="search" class="submit-button" />
+          <input
+            type="submit"
+            value="search"
+            class="submit-button"
+            id="current-location"
+          />
         </form>
       </header>
       <main>
@@ -63,7 +72,7 @@
             <h1 class="weather-city" id="currentCity"></h1>
             <h2 class="weather-country" id="currentCountry"></h2>
             <p class="weather-app-details" id="weather-app-details">
-              <span class="time" id="time"></span>
+              <span id="time"></span>
               <span id="descriptionWeather"></span>
               <br />
               Humidity: <strong id="humidity"></strong>, Wind:
@@ -76,17 +85,19 @@
             <div class="current-unit">°C</div>
           </div>
         </div>
+
         <div class="weather-forecast" id="forecast"></div>
       </main>
     </div>
     <footer>
       This project was coded by
-      <a href="https://github.com/stineb89">Stine Berg</a> and is on
-      <a href="https://github.com/stineb89/weatherforecast-app">GitHub</a>
+      <a href="https://github.com/stineb89">Stine Berg</a> and is at
+      <a href="https://github.com/stineb89/weatherforecast-app"
+        >open-soured on GitHub</a
+      >
       and
       <a href="https://lunaweather.netlify.app/">hosted on Netlify</a>
     </footer>
-
     <script src="app.js"></script>
   </body>
 </html>

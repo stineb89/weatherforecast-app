@@ -22,13 +22,12 @@ body {
   font-family: "Caveat", cursive;
   font-size: 40px;
   color: rgb(177, 213, 249);
-  margin: 15px 0px -50px;
+  margin: 20px auto;
   text-transform: lowercase;
 }
-
 .material-symbols-outlined {
   position: relative;
-  top: 63px;
+  top: 20px;
   margin-left: 2px;
 }
 h1 {
@@ -47,7 +46,7 @@ header {
   color: white;
   background: rgb(57, 92, 190);
   cursor: pointer;
-  margin: 30px 0 20px 0;
+  margin: 25px 0 20px 0;
 }
 .submit-button:hover {
   background: rgb(53, 106, 212);
@@ -60,6 +59,9 @@ header {
   background: rgb(213, 213, 255);
   width: 190px;
   margin-left: 40px;
+}
+.search-form {
+  margin-top: -40px;
 }
 p {
   font-family: "Edu AU VIC WA NT Pre", cursive;
@@ -80,9 +82,20 @@ footer {
   margin-top: -50px;
 }
 .weather-app {
-  background-image: url("images/moon-7892567_1280.jpg");
+  background-image: url("https://github.com/stineb89/weatherforecast-app/blob/main/images/moon-7892567_1280.jpg?raw=true");
   background-size: cover;
-  max-width: 500px;
+  max-width: 600px;
+  display: block;
+  margin: 60px auto;
+  border-radius: 20px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 2px 0px 15px rgb(190, 166, 177);
+}
+.weather-app-header {
+  background-image: url("https://github.com/stineb89/weatherforecast-app/blob/main/images/moon-7892567_1280.jpg?raw=true");
+  background-size: cover;
+  height: 100px;
+  max-width: 600px;
   display: block;
   margin: 60px auto;
   border-radius: 20px;
@@ -103,14 +116,14 @@ footer {
 .weather-city {
   font-size: 36px;
   position: relative;
-  left: 30px;
+  left: 40px;
   bottom: 30px;
 }
 .weather-country {
   font-size: 22px;
   font-weight: normal;
   position: relative;
-  left: 20px;
+  left: 30px;
   bottom: 30px;
   margin: -30px 0 0 12px;
 }
@@ -118,7 +131,7 @@ footer {
   font-size: 15px;
   color: rgb(255, 255, 255);
   line-height: 25px;
-  margin: 10px 10px;
+  margin: 10px 40px;
 }
 .weather-app-details strong {
   color: rgb(45, 45, 142);
@@ -128,45 +141,47 @@ footer {
   font-family: "Gill Sans";
   font-weight: bold;
   margin: 0 0px 0px -20px;
+  position: relative;
+  top: 40px;
 }
 .weather-app-icon {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   position: relative;
-  top: 10px;
+  top: 35px;
   left: -17px;
 }
 .current-unit {
   font-size: 22px;
   margin-right: 40px;
   position: relative;
-  top: 10px;
-  left: -5px;
+  top: 50px;
 }
-  .weather-forecast {
-        display: flex;
-        justify-content: space-around;
-        margin: 30px;
-      }
-      .weather-forecast-date {
-        text-align: center;
-        color: white;
-        font-size: 17px;
-        line-height: 20px;
-      }
-      .weather-forecast-icon {
-        font-size: 36px;
-        text-align: center;
-        margin-bottom: 10px;
-      }
-      .weather-forecast-temperatures {
-        text-align: center;
-        color: black;
-        font-family: "Edu AU VIC WA NT Pre";
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-      }
-      .weather-forecast-temp {
-        padding: 0 10px;
-      }
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.weather-forecast-date {
+  text-transform: lowercase;
+  text-align: center;
+  color: white;
+  margin: 0px 0 -10px;
+}
+.weather-forecast-icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin: 10px -10px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans";
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temp {
+  padding: 0 8px;
+}
