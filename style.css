@@ -131,17 +131,13 @@ footer {
   top: 80px;
 }
 .time {
-  font-family: "Edu AU VIC WA NT Pre";
-  font-size: 12px;
-  position: relative;
-  left: 400px;
-  top: -45px;
+  font-family: monospace;
+  font-size: 13px;
   font-weight: bold;
-  background: rgb(255, 255, 255);
-  opacity: 0.6;
   border-radius: 5px;
-  border: 5px solid white;
-  padding: 5px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
 .weather-app-icon {
   width: 60px;
@@ -185,12 +181,12 @@ footer {
   padding: 0 8px;
 }
 .forecast-background {
-  max-width: 500px;
+  max-width: 400px;
   background: white;
   opacity: 1.4;
   display: block;
   margin: 0 auto;
-  padding: 2%;
+  padding: 1%;
   border-radius: 5px;
 }
 .footer-background {
