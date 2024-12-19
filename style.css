@@ -1,20 +1,7 @@
 body {
-  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-    linear-gradient(
-      #1d1d1d 25%,
-      #1a1a1a 25%,
-      #1a1a1a 50%,
-      transparent 50%,
-      transparent 75%,
-      #242424 75%,
-      #242424
-    );
-  background-color: #131313;
-  background-size: 20px 20px;
+  background-image: url("images/landscape-4796735_1280.jpg");
+  background-size: cover;
+  background-color: black;
 }
 .title {
   text-align: center;
@@ -87,6 +74,7 @@ footer {
   background-size: cover;
   max-width: 600px;
   display: block;
+  opacity: 0.9;
   margin: 60px auto;
   border-radius: 20px;
   border: 3px solid rgb(255, 255, 255);
@@ -176,6 +164,7 @@ footer {
   margin: 5px 0 0 0;
   display: flex;
   justify-content: center;
+  max-width: 600px;
 }
 .weather-forecast-temp {
   padding: 0 8px;
@@ -191,7 +180,7 @@ footer {
 }
 .footer-background {
   background: white;
-  max-width: 300px;
+  max-width: 600px;
   display: block;
   margin: -50px auto;
   border: 3px solid rgb(255, 255, 255);
