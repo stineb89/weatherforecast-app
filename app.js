@@ -106,8 +106,9 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
-          <div class="forecast-background">
+          
           <div class="weather-forecast-day">
+          <div class="forecast-background">
                 <div class="weather-forecast-date">${formatDay(day.time)}</div>
                 <div class="weather-forecast-icon">
                   <img src="${
@@ -121,6 +122,7 @@ function displayForecast(response) {
                   <div class="weather-forecast-temp">${Math.round(
                     day.temperature.minimum
                   )}º</div>
+                  
                 </div>
                 </div>
               </div>
