@@ -74,7 +74,7 @@ function showDate(date) {
 
   let day = days[date.getDay()];
 
-  return `Today is ${day}, ${hours}:${minutes}`;
+  return `${day}, ${hours}:${minutes}`;
 }
 
 //
