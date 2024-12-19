@@ -74,7 +74,7 @@ function showDate(date) {
 
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes} ✨`;
+  return `Today is ${day}, ${hours}:${minutes}`;
 }
 
 //
@@ -106,6 +106,7 @@ function displayForecast(response) {
       forecastHtml =
         forecastHtml +
         `
+          <div class="forecast-background">
           <div class="weather-forecast-day">
                 <div class="weather-forecast-date">${formatDay(day.time)}</div>
                 <div class="weather-forecast-icon">
@@ -120,6 +121,7 @@ function displayForecast(response) {
                   <div class="weather-forecast-temp">${Math.round(
                     day.temperature.minimum
                   )}º</div>
+                </div>
                 </div>
               </div>
               `;

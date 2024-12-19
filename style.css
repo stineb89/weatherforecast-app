@@ -21,7 +21,7 @@ body {
   font-weight: light;
   font-family: "Caveat", cursive;
   font-size: 40px;
-  color: rgb(177, 213, 249);
+  color: white;
   margin: 20px auto;
   text-transform: lowercase;
 }
@@ -68,33 +68,23 @@ p {
   text-align: left;
 }
 a {
-  color: rgb(222, 224, 224);
+  color: rgb(57, 92, 190);
 }
 a:hover {
-  color: rgb(237, 237, 237);
+  color: rgb(112, 134, 179);
 }
 footer {
   font-size: 12px;
   padding: 3px;
   text-align: center;
-  color: rgb(145, 181, 205);
+  color: rgb(24, 36, 100);
   display: block;
   margin-top: -50px;
+  font-family: Georgia, Times, "Times New Roman", serif;
 }
 .weather-app {
-  background-image: url("https://github.com/stineb89/weatherforecast-app/blob/main/images/moon-7892567_1280.jpg?raw=true");
+  background-image: url("images/landscape-8336496_1280.jpg");
   background-size: cover;
-  max-width: 600px;
-  display: block;
-  margin: 60px auto;
-  border-radius: 20px;
-  border: 3px solid rgb(255, 255, 255);
-  box-shadow: 2px 0px 15px rgb(190, 166, 177);
-}
-.weather-app-header {
-  background-image: url("https://github.com/stineb89/weatherforecast-app/blob/main/images/moon-7892567_1280.jpg?raw=true");
-  background-size: cover;
-  height: 100px;
   max-width: 600px;
   display: block;
   margin: 60px auto;
@@ -108,10 +98,6 @@ footer {
 }
 .weather-temperature-container {
   display: flex;
-}
-.hum-and-wind {
-  text-align: right;
-  color: white;
 }
 .weather-city {
   font-size: 36px;
@@ -128,8 +114,8 @@ footer {
   margin: -30px 0 0 12px;
 }
 .weather-app-details {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
+  font-size: 18px;
+  color: white;
   line-height: 25px;
   margin: 10px 40px;
 }
@@ -137,25 +123,38 @@ footer {
   color: rgb(45, 45, 142);
 }
 .currentTemperature {
-  font-size: 55px;
+  font-size: 68px;
   font-family: "Gill Sans";
   font-weight: bold;
-  margin: 0 0px 0px -20px;
+  margin: 0 0px 0px -30px;
   position: relative;
-  top: 40px;
+  top: 80px;
+}
+.time {
+  font-family: "Edu AU VIC WA NT Pre";
+  font-size: 12px;
+  position: relative;
+  left: 400px;
+  top: -45px;
+  font-weight: bold;
+  background: rgb(255, 255, 255);
+  opacity: 0.6;
+  border-radius: 5px;
+  border: 5px solid white;
+  padding: 5px;
 }
 .weather-app-icon {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   position: relative;
-  top: 35px;
-  left: -17px;
+  top: 92px;
+  left: -22px;
 }
 .current-unit {
   font-size: 22px;
   margin-right: 40px;
   position: relative;
-  top: 50px;
+  top: 95px;
 }
 .weather-forecast {
   display: flex;
@@ -165,23 +164,41 @@ footer {
 .weather-forecast-date {
   text-transform: lowercase;
   text-align: center;
-  color: white;
+  color: rgb(57, 92, 190);
   margin: 0px 0 -10px;
 }
 .weather-forecast-icon {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  margin: 10px -10px;
+  margin: 2px 0;
 }
 .weather-forecast-temperatures {
   text-align: center;
   color: black;
   font-family: "Lucida Sans";
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
   display: flex;
   justify-content: center;
 }
 .weather-forecast-temp {
   padding: 0 8px;
+}
+.forecast-background {
+  max-width: 500px;
+  background: white;
+  opacity: 1.4;
+  display: block;
+  margin: 0 auto;
+  padding: 2%;
+  border-radius: 5px;
+}
+.footer-background {
+  background: white;
+  max-width: 590px;
+  display: block;
+  margin: -50px auto;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 2px 0px 15px rgb(190, 166, 177);
 }
