@@ -181,7 +181,7 @@ footer {
   padding: 0 8px;
 }
 .forecast-background {
-  max-width: 400px;
+  max-width: 300px;
   background: white;
   opacity: 1.4;
   display: block;
@@ -191,7 +191,7 @@ footer {
 }
 .footer-background {
   background: white;
-  max-width: 590px;
+  max-width: 300px;
   display: block;
   margin: -50px auto;
   border: 3px solid rgb(255, 255, 255);
