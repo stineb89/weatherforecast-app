@@ -17,12 +17,11 @@ body {
   background-size: 20px 20px;
 }
 .material-symbols-outlined {
-  position: relative;
-  top: 20px;
-  margin-left: 2px;
+  margin-top: 50px;
 }
 h1 {
   font-family: "Exo 2", serif;
+  margin-top: 30px;
 }
 h2 {
   font-family: "Exo 2", serif;
@@ -33,39 +32,36 @@ header {
 .submit-button {
   border-radius: 5px;
   border: 1px solid white;
-  padding: 8px;
+  padding: 5px;
   color: white;
   background: rgb(57, 92, 190);
   cursor: pointer;
-  margin: 25px 0 20px 0;
 }
 .submit-button:hover {
   background: rgb(53, 106, 212);
 }
-
 .currentLocation {
   border-radius: 5px;
   border: 1px solid white;
-  padding: 8px;
+  padding: 5px;
   color: white;
   background: rgb(57, 92, 190);
   cursor: pointer;
-  margin: 25px 0 20px 0;
 }
 .currentLocation:hover {
-  background: rgb(53, 106, 212);
+  background: white;
 }
 .search {
   border-radius: 5px;
   border: none;
+  padding: 10px;
   font-size: 15px;
-  padding: 8px;
   background: rgb(213, 213, 255);
-  width: 190px;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 .search-form {
-  margin-top: -40px;
+  margin-top: -60px;
+  display: flex;
 }
 p {
   font-family: "Edu AU VIC WA NT Pre", cursive;
@@ -87,7 +83,7 @@ footer {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 .weather-app {
-  background-image: url("images/moon-7892567_1280.jpg");
+  background-image: url("images/landscape-5176891_1280.jpg");
   background-size: cover;
   max-width: 600px;
   display: block;
@@ -187,12 +183,9 @@ footer {
 }
 .forecast-background {
   background: rgba(240, 231, 231, 0.3);
-  background: rgba(242, 244, 242, 0.2);
-  background: rgba(232, 232, 232, 0.2);
-  background: rgb(240, 255, 240, 0.2);
   display: block;
   margin: 30px auto;
-  padding: 2px;
+  padding: 5px;
   border-radius: 5px;
 }
 .max-min {
