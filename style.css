@@ -42,6 +42,19 @@ header {
 .submit-button:hover {
   background: rgb(53, 106, 212);
 }
+
+.currentLocation {
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 8px;
+  color: white;
+  background: rgb(57, 92, 190);
+  cursor: pointer;
+  margin: 25px 0 20px 0;
+}
+.currentLocation:hover {
+  background: rgb(53, 106, 212);
+}
 .search {
   border-radius: 5px;
   border: none;
@@ -124,7 +137,7 @@ footer {
 }
 .time {
   font-family: monospace;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: bold;
   display: block;
   margin: 30px;
@@ -147,13 +160,13 @@ footer {
 .weather-forecast {
   display: flex;
   justify-content: space-around;
-  max-width: 500px;
+  max-width: 600px;
   padding: 2%;
 }
 .weather-forecast-date {
   text-transform: lowercase;
   text-align: center;
-  color: rgb(57, 92, 190);
+  color: rgb(17, 46, 128);
   margin: 0px 0 -10px;
 }
 .weather-forecast-icon {
@@ -181,4 +194,9 @@ footer {
   margin: 30px auto;
   padding: 2px;
   border-radius: 5px;
+}
+.max-min {
+  font-size: 8px;
+  margin: 0 0 0 13px;
+  color: rgb(17, 46, 128);
 }
