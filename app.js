@@ -10,15 +10,6 @@ function handleSubmit(event) {
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSubmit);
 
-/// search city api key
-
-function searchCity(city) {
-  apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
-  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
-
-  axios.get(apiUrl).then(refreshWeather);
-}
-
 function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
@@ -84,7 +75,6 @@ function getForecast(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}}&key=${apiKey}&units=metric`;
 
   axios(apiUrl).then(displayForecast);
-  console.log(apiUrl);
 }
 
 //
@@ -122,8 +112,8 @@ function displayForecast(response) {
                   <div class="weather-forecast-temp">${Math.round(
                     day.temperature.minimum
                   )}º</div>
-                  
                 </div>
+                 <div class="max-min"> max / min</div>
                 </div>
               </div>
               `;
@@ -133,5 +123,36 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+
+/// search city api key
+
+function searchCity(city) {
+  apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
+  apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(refreshWeather);
+}
+
+// current location
+
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+
+  let apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  let url = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
+
+  axios.get(url).then(refreshWeather);
+  axios.get(apiUrl).then(refreshWeather);
+}
+
+function retrievePosition(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let buttonCurrent = document.querySelector("#currentLoc");
+buttonCurrent.addEventListener("click", retrievePosition);
 
 searchCity("Oslo");
