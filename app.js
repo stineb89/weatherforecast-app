@@ -77,8 +77,6 @@ function getForecast(city) {
   axios(apiUrl).then(displayForecast);
 }
 
-//
-
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -140,11 +138,11 @@ function showPosition(position) {
   let lon = position.coords.longitude;
 
   let apiKey = "5e64c3tb70d2afbdd0ba0e314o875a8e";
-  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
   let url = `https://api.shecodes.io/weather/v1/current?lon=${lon}&lat=${lat}&key=${apiKey}&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lat=${lat}&lon=${lon}&key=${apiKey}&units=metric`;
 
   axios.get(url).then(refreshWeather);
-  axios.get(apiUrl).then(refreshWeather);
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function retrievePosition(event) {

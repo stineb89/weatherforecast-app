@@ -43,24 +43,24 @@ header {
 .currentLocation {
   border-radius: 5px;
   border: 1px solid white;
-  padding: 5px;
   color: white;
   background: rgb(57, 92, 190);
   cursor: pointer;
 }
 .currentLocation:hover {
-  background: white;
+  background: rgb(53, 106, 212);
 }
 .search {
   border-radius: 5px;
   border: none;
-  padding: 10px;
+  padding: 8px;
   font-size: 15px;
   background: rgb(213, 213, 255);
   margin-left: 10px;
 }
 .search-form {
   margin-top: -60px;
+  margin-left: -5px;
   display: flex;
 }
 p {
