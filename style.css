@@ -80,7 +80,7 @@ footer {
   color: rgb(201, 201, 201);
   display: block;
   margin-top: -50px;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Georgia;
 }
 .weather-app {
   background-image: url("images/landscape-5176891_1280.jpg");
@@ -95,7 +95,6 @@ footer {
 }
 .weather-app-data {
   display: flex;
-  justify-content: space-between;
 }
 .weather-temperature-container {
   display: flex;
@@ -169,7 +168,6 @@ footer {
   width: 60px;
   height: 60px;
   text-align: center;
-  margin: 2px 0;
 }
 .weather-forecast-temperatures {
   text-align: center;
@@ -179,13 +177,12 @@ footer {
   justify-content: center;
 }
 .weather-forecast-temp {
-  padding: 0 8px;
+  padding: 0 0 5px;
 }
 .forecast-background {
-  background: rgba(240, 231, 231, 0.3);
+  background: rgba(240, 231, 231, 0.4);
   display: block;
   margin: 30px auto;
-  padding: 5px;
   border-radius: 5px;
 }
 .max-min {
