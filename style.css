@@ -184,14 +184,17 @@ footer {
   display: block;
   margin: 30px auto;
   border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 20px 5px 20px rgb(44, 44, 44);
+}
+.forecast-background:hover {
+  filter: contrast(90%);
+  transform: scale(1.1);
+  cursor: pointer;
+  background: rgba(212, 212, 212, 0.2);
 }
 .max-min {
   font-size: 8px;
   margin: 0 0 0 13px;
   color: rgb(17, 46, 128);
-}
-.temp-bckground:hover {
-  background: yellow;
-  height: 50px;
-  width: 100px;
 }
