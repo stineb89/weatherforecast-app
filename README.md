@@ -1,7 +1,7 @@
 <h1>Interactive weather app</h1>
 <br/>
 <br/>
-<p>Search for your city and get the current temperature<p>
+<p>In this app you can easily search for your city and get the current temperature with forecast view. <p>
 
 <h3>This app includes:</h3>
 <ul>
@@ -14,7 +14,8 @@
 <li>Current location</li>
 </ul>
 
-<h4>This app includes codes with:</h4> 
+<hr/>
+<h4>Skills learned:</h4> 
 <ul>
 <li>HTML</li>
 <li>CSS</li>
