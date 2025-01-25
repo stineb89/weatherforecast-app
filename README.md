@@ -23,4 +23,4 @@
 </ul>
 
 <hr/>
-Project sheCodes
+This was a code project learned with shecodes
