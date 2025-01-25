@@ -9,7 +9,7 @@
 <li>Weather description</li>
 <li>Humidity</li>
 <li>Wind</li>
-<li>Date and time</li>
+<li>Real date and time</li>
 <li>5 day forecast view</li>
 <li>Current location</li>
 </ul>
